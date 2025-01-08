@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayendra Murthy Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        .nav-link:hover {
+            color: #0ff !important;
+        }
+
+        .header-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #000, #111);
+        }
+
+        .header-section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+        }
+
+        .header-section p {
+            font-size: 1.5rem;
+            color: #ccc;
+        }
+
+        .btn-neon {
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            border: none;
+            color: #fff;
+            padding: 10px 30px;
+            font-size: 1rem;
+            border-radius: 50px;
+            box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff00ff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-neon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff, 0 0 40px #ff00ff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #0ff;
+        }
+
+        .card {
+            background: #111;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+        }
+
+        .card-title {
+            color: #0ff;
+        }
+
+        .card-text {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vijayendra Murthy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="header-section">
+        <div class="container d-flex align-items-center justify-content-center text-center flex-column flex-md-row">
+            <!-- Circular Photo -->
+            <div class="me-md-5 mb-4 mb-md-0">
+                <img src="C:\Users\vijay\OneDrive\Desktop\vijay.jpg" alt="Vijayendra Murthy" class="rounded-circle" style="width: 4in; height: 4in; border: 5px solid #0ff; box-shadow: 0 0 20px #0ff;">
+            </div>
+            <!-- Introduction Text -->
+            <div>
+                <h1>Hi, I'm Vijayendra Murthy</h1>
+                <p>Web Developer | Data Enthusiast | Innovator</p>
+                <a href="#projects" class="btn btn-neon">Explore My Work</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <p class="text-center">I am a dedicated web developer skilled in front-end and back-end technologies, including HTML, CSS, JavaScript, React, and Node.js. With a strong foundation in programming languages like C++, Python, and Java, I specialize in creating responsive and scalable web applications.</p>
+            <p class="text-center"><strong>Education:</strong></p>
+            <ul>
+                <li>B.Tech in Computer Science and Engineering, Sagi Ramakrishnam Raju Engineering College (8.89 GPA)</li>
+                <li>Intermediate, Tirumala Junior Kalasala (95.4%)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background: linear-gradient(135deg, #111, #222);">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">To-Do List App</h5>
+                            <p class="card-text">A MERN stack application for task management with a responsive interface and modern web development practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Chat Application</h5>
+                            <p class="card-text">Developed a real-time chat application with user authentication and message storage using Firebase and React.js.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Waiter Tips Analysis</h5>
+                            <p class="card-text">Machine learning project to predict waiter tips using regression models, multivariate analysis, and feature engineering.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Prasanti Street, Narasayya Agraharam, Bhimavaram, 534201</p>
+            <p>Phone: 9392387507 | Email: vijayendramurthy671@gmail.com</p>
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/your-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vijayendra Murthy. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
